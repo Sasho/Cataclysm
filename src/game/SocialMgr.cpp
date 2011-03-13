@@ -126,7 +126,7 @@ void PlayerSocial::SendSocialList(uint32 mask)
 
     uint32 size = m_playerSocialMap.size();
 
-    WorldPacket data(SMSG_CONTACT_LIST, (4+4));             // just can guess size
+    WorldPacket data(SMSG_CONTACT_LIST, (4 + 4));             // just can guess size
     data << uint32(mask);                                   // flag (0x1, 0x2, 0x4)
     size_t countPos = data.wpos();
     uint32 count = 0;
