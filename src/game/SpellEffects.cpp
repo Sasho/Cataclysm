@@ -5016,9 +5016,9 @@ void Spell::DoSummonGuardian(SpellEffectEntry const* effect, uint32 forceFaction
         Map *map = m_caster->GetMap();
         uint32 pet_number = sObjectMgr.GeneratePetNumber();
         if (!spawnCreature->Create(map->GenerateLocalLowGuid(HIGHGUID_PET), map,m_caster->GetPhaseMask(),
-            m_spellInfo->EffectMiscValue[eff_idx], pet_number))
+            effect->EffectMiscValue, pet_number))
         {
-            sLog.outError("no such creature entry %u", m_spellInfo->EffectMiscValue[eff_idx]);
+            sLog.outError("no such creature entry %u", effect->EffectMiscValue, pet_number);
             delete spawnCreature;
             return;
         }
