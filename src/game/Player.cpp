@@ -20016,7 +20016,7 @@ void Player::SetGroup(Group *group, int8 subgroup)
 
 void Player::SendInitialPacketsBeforeAddToMap()
 {
-    GetSocial()->SendSocialList(this, SOCIAL_FLAG_FRIEND | SOCIAL_FLAG_IGNORED | SOCIAL_FLAG_MUTED);
+    GetSocial()->SendSocialList(SOCIAL_FLAG_FRIEND | SOCIAL_FLAG_IGNORED | SOCIAL_FLAG_MUTED);
 
     // Homebind
     WorldPacket data(SMSG_BINDPOINTUPDATE, 5*4);

@@ -467,7 +467,7 @@ enum Opcodes
     CMSG_QUESTLOG_REMOVE_QUEST                       = 0x0EDA8, // 4.0.6a 13623
     SMSG_QUESTLOG_FULL                               = 0x0618C, // 4.0.6a 13623
     SMSG_QUESTUPDATE_FAILED                          = 0x0E588, // 4.0.6a 13623
-    SMSG_QUESTUPDATE_FAILEDTIMER                     = 0x0f7CC, // 4.0.6a 13623
+    SMSG_QUESTUPDATE_FAILEDTIMER                     = 0x0F7CC, // 4.0.6a 13623
     SMSG_QUESTUPDATE_COMPLETE                        = 0x0EDA0, // 4.0.6a 13623
     SMSG_QUESTUPDATE_ADD_KILL                        = 0x0ADA0, // 4.0.6a 13623
     SMSG_QUESTUPDATE_ADD_ITEM                        = 0x1006B, // 4.0.6a 13623
@@ -477,7 +477,7 @@ enum Opcodes
     CMSG_LIST_INVENTORY                              = 0x0EDC8, // 4.0.6a 13623
     SMSG_LIST_INVENTORY                              = 0x0F8AC, // 4.0.6a 13623
     CMSG_SELL_ITEM                                   = 0x063A4, // 4.0.6a 13623
-    SMSG_SELL_ITEM                                   = 0x6CE8,    // 14252 - 4.0.6.13623
+    SMSG_SELL_ITEM                                   = 0x06CE8, // 14252 - 4.0.6.13623
     CMSG_BUY_ITEM                                    = 0x0EA84, // 4.0.6a 13623
     CMSG_BUY_ITEM_IN_SLOT                            = 0x1A3,
     SMSG_BUY_ITEM                                    = 0x069CC, // 27084 - 4.0.6.13623
@@ -896,8 +896,8 @@ enum Opcodes
     CMSG_MOVE_FLIGHT_ACK                             = 0x0A3C8, // 4.0.6a 13623
     MSG_MOVE_START_SWIM_CHEAT                        = 0x26C0,  // 9920  - 4.0.6.13623
     MSG_MOVE_STOP_SWIM_CHEAT                         = 0x6988,  // 27016 - 4.0.6.13623
-    SMSG_MOVE_SET_CAN_FLY                            = 0x03084, // 4.0.6a 13623
-    SMSG_MOVE_UNSET_CAN_FLY                          = 0x0DC57, //
+    SMSG_MOVE_SET_CAN_FLY                            = 0x0BDA0, // 4.0.6a 13623
+    SMSG_MOVE_UNSET_CAN_FLY                          = 0x03084, // 4.0.6a 13623
     CMSG_MOVE_SET_CAN_FLY_ACK                        = 0x0FCAC, // 4.0.6a 13623
     CMSG_MOVE_SET_FLY                                = 0x0E0E0, // 4.0.6a 13623
     CMSG_SOCKET_GEMS                                 = 0x076C4, // 4.0.6a 13623
@@ -958,7 +958,7 @@ enum Opcodes
     MSG_MOVE_SET_FLIGHT_SPEED                        = 0x0B088, // 4.0.6a 13623
     MSG_MOVE_SET_FLIGHT_BACK_SPEED_CHEAT             = 0x10150, //
     MSG_MOVE_SET_FLIGHT_BACK_SPEED                   = 0x0B484, // 4.0.6a 13623
-    SMSG_FORCE_FLIGHT_SPEED_CHANGE                   = 0x03F7D, //
+    SMSG_FORCE_FLIGHT_SPEED_CHANGE                   = 0x0E5CC, // 4.0.6a 13623
     CMSG_FORCE_FLIGHT_SPEED_CHANGE_ACK               = 0x0A98C, // 4.0.6a 13623
     SMSG_FORCE_FLIGHT_BACK_SPEED_CHANGE              = 0x7F5E,  // 32606 - 4.0.3.13329
     CMSG_FORCE_FLIGHT_BACK_SPEED_CHANGE_ACK          = 0x0FBC8, // 4.0.6a 13623
