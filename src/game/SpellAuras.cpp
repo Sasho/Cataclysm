@@ -4465,6 +4465,10 @@ void Aura::HandleAuraModRoot(bool apply, bool Real)
     // only at real add/remove aura
     if(!Real)
         return;
+	 
+	if(m_spellProto->Id == 69001) 	
+		if(!m_target->HasFlag(UNIT_FIELD_FLAGS_2,0x80000))	
+			m_target->SetFlag(UNIT_FIELD_FLAGS_2,0x80000);
 
     Unit *target = GetTarget();
 
